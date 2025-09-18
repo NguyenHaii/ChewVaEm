@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dành cho em be 💕</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="Chew.css" />
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 nunito relative overflow-x-hidden">
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="heart-float absolute top-20 left-10 text-pink-200 text-2xl">💕</div>
+        <div class="heart-float absolute top-40 right-20 text-pink-100 text-xl">🤍</div>
+        <div class="heart-float absolute top-60 left-1/4 text-pink-200 text-lg">💖</div>
+        <div class="heart-float absolute bottom-40 right-10 text-pink-100 text-2xl">💝</div>
+        <div class="heart-float absolute bottom-60 left-20 text-pink-200 text-xl">💗</div>
+        <div class="heart-float absolute top-80 right-1/3 text-pink-100 text-lg">🤍</div>
+    </div>
+
+    <div class="sparkle" style="top: 15%; left: 20%; animation-delay: 0s;"></div>
+    <div class="sparkle" style="top: 25%; right: 15%; animation-delay: 0.7s;"></div>
+    <div class="sparkle" style="bottom: 30%; left: 10%; animation-delay: 1.2s;"></div>
+    <div class="sparkle" style="bottom: 20%; right: 25%; animation-delay: 1.8s;"></div>
+
+    <div class="relative z-10 container mx-auto px-4 py-8">
+        <div class="text-center mb-12 fade-in">
+            <h1
+                class="dancing-script text-6xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400 mb-4">
+                Dành cho em be
+            </h1>
+            <div class="pulse-heart text-4xl mb-4">💕</div>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-2xl p-8 mb-8 fade-in relative overflow-hidden">
+                <div
+                    class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400">
+                </div>
+
+                <div class="text-center mb-6">
+                    <h2 class="dancing-script text-3xl text-gray-700 mb-4"></h2>
+
+                    <div class="relative group">
+                        <div id="photoContainer"
+                            class="w-80 h-80 mx-auto bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl border-4 border-solid border-pink-200 flex items-center justify-center cursor-pointer hover:border-pink-300 transition-all duration-300 group-hover:shadow-lg overflow-hidden relative photo-glow">
+                            <img id="defaultPhoto" src="Chew.jpg" alt=""
+                                class="w-full h-full object-cover rounded-2xl svg-animate"
+                                onerror="this.style.display='none'; document.getElementById('fallbackPhoto').style.display='flex';">
+
+                            <div id="fallbackPhoto"
+                                class="w-full h-full flex items-center justify-center bg-gradient-to-br from-pink-100 via-purple-100 to-indigo-100"
+                                style="display: none;">
+                                <svg viewBox="0 0 400 400" class="w-full h-full svg-animate">
+                                    <defs>
+                                        <radialGradient id="bgGrad" cx="50%" cy="30%">
+                                            <stop offset="0%" style="stop-color:#fdf2f8" />
+                                            <stop offset="100%" style="stop-color:#e0e7ff" />
+                                        </radialGradient>
+                                        <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#8b5cf6" />
+                                            <stop offset="100%" style="stop-color:#ec4899" />
+                                        </linearGradient>
+                                        <filter id="glow">
+                                            <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                                            <feMerge>
+                                                <feMergeNode in="coloredBlur" />
+                                                <feMergeNode in="SourceGraphic" />
+                                            </feMerge>
+                                        </filter>
+                                    </defs>
+
+                                    <rect width="400" height="400" fill="url(#bgGrad)" />
+
+                                    <g class="floating-hearts" opacity="0.3">
+                                        <text x="50" y="80" font-size="20" fill="#ec4899">💕</text>
+                                        <text x="320" y="120" font-size="16" fill="#f472b6">💖</text>
+                                        <text x="80" y="300" font-size="18" fill="#ec4899">💗</text>
+                                        <text x="300" y="320" font-size="14" fill="#f472b6">💘</text>
+                                    </g>
+
+                                    <g transform="translate(200,200)">
+                                        <circle cx="0" cy="-20" r="45" fill="#fef3c7" stroke="#f59e0b"
+                                            stroke-width="2" />
+
+                                        <path
+                                            d="M -45,-20 Q -50,-60 -30,-70 Q 0,-80 30,-70 Q 50,-60 45,-20 Q 40,-10 30,0 Q 0,10 -30,0 Q -40,-10 -45,-20"
+                                            fill="url(#hairGrad)" filter="url(#glow)" />
+
+                                        <circle cx="-15" cy="-25" r="3" fill="#1f2937" />
+                                        <circle cx="15" cy="-25" r="3" fill="#1f2937" />
+                                        <circle cx="-13" cy="-27" r="1" fill="#ffffff" />
+                                        <circle cx="17" cy="-27" r="1" fill="#ffffff" />
+
+                                        <ellipse cx="0" cy="-15" rx="1" ry="2" fill="#f59e0b" />
+
+                                        <path d="M -12,-5 Q 0,5 12,-5" stroke="#ec4899" stroke-width="2" fill="none"
+                                            stroke-linecap="round" />
+
+                                        <circle cx="-25" cy="-10" r="4" fill="#fca5a5" opacity="0.6" />
+                                        <circle cx="25" cy="-10" r="4" fill="#fca5a5" opacity="0.6" />
+
+                                        <ellipse cx="0" cy="50" rx="35" ry="45" fill="#fbbf24" />
+
+                                        <path d="M -35,30 Q -40,80 -50,120 L 50,120 Q 40,80 35,30 Z" fill="#ec4899"
+                                            opacity="0.8" />
+
+                                        <ellipse cx="-45" cy="40" rx="8" ry="25" fill="#fbbf24"
+                                            transform="rotate(-20)" />
+                                        <ellipse cx="45" cy="40" rx="8" ry="25" fill="#fbbf24" transform="rotate(20)" />
+
+                                        <circle cx="-55" cy="65" r="6" fill="#fbbf24" />
+                                        <circle cx="55" cy="65" r="6" fill="#fbbf24" />
+                                        <text x="-65" y="75" font-size="12" fill="#ec4899">💕</text>
+                                        <text x="45" y="75" font-size="12" fill="#ec4899">💕</text>
+                                    </g>
+
+                                    <g class="sparkles" opacity="0.8">
+                                        <text x="100" y="150" font-size="12" fill="#fbbf24">✨</text>
+                                        <text x="280" y="180" font-size="10" fill="#a855f7">✨</text>
+                                        <text x="120" y="250" font-size="14" fill="#ec4899">✨</text>
+                                        <text x="300" y="280" font-size="8" fill="#fbbf24">✨</text>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <img id="uploadedPhoto" class="w-full h-full object-cover rounded-2xl hidden"
+                                alt="Ảnh của em yêu">
+
+                            <div
+                                class="absolute inset-0 bg-pink-500 bg-opacity-0 hover:bg-opacity-10 transition-all duration-300 rounded-2xl flex items-center justify-center">
+                                <div
+                                    class="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
+                                    <div class="text-2xl mb-2">📷</div>
+                                    <p class="text-sm font-medium">Thay ảnh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="file" id="photoInput" accept="image/*" class="hidden">
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl fade-in hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <div class="text-3xl mb-3">🌸</div>
+                        <h3 class="dancing-script text-2xl text-pink-600 mb-3">Chóp Chóp</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Đáng iu
+                        </p>
+                    </div>
+                </div>
+                
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl fade-in hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <div class="text-3xl mb-3">🌙</div>
+                        <h3 class="dancing-script text-2xl text-purple-600 mb-3">Hem biết note gì</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Chơi gem zui zẻ
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl fade-in hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <div class="text-3xl mb-3">🦋</div>
+                        <h3 class="dancing-script text-2xl text-indigo-600 mb-3">Nụ cười</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Đẹp , không phải dọc
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl fade-in hover:shadow-2xl transition-all duration-300 hover:scale-105">
+                    <div class="text-center">
+                        <div class="text-3xl mb-3">🌈</div>
+                        <h3 class="dancing-script text-2xl text-pink-600 mb-3">.....</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Moa moa
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center fade-in">
+                <button id="surpriseBtn"
+                    class="bg-gradient-to-r from-pink-300 to-rose-400 hover:from-pink-400 hover:to-rose-500 text-white font-bold py-4 px-8 rounded-full text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 dancing-script">
+                    Nhấn đi
+                </button>
+            </div>
+
+            <div id="surpriseMessage"
+                class="hidden mt-8 bg-gradient-to-r from-pink-300 to-rose-400 text-white rounded-2xl p-8 text-center shadow-2xl">
+                <div class="text-4xl mb-4">🎉</div>
+                <h3 class="dancing-script text-3xl mb-4"></h3>
+                <p class="text-xl leading-relaxed">
+                    Tạo riêng đóa , iu iu
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="Chew.js"></script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'980e05ca249c25d4',t:'MTc1ODE2ODkzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>
